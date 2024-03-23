@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr" >
+
+<head>
+    <meta charset="utf-8">
+    <title>Project Thalassa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Project: <strong>Thalassa</strong></h1>
+    </header>
+    <p>Besoin d'aide ? Allez voir la page d'<a href="Aide/aide.html">aide</a></p>
+    <h2>Morphing</h2>
+    <div id="div1">
+        <canvas id="canvas1" width="600" height="400"></canvas>
+        <button id="stop">STOP</button>
+        <button id="mirrorV">MIRROR-V</button>
+        <button id="mirrorH">MIRROR-H</button>
+        <button id="last">LAST</button>
+        <button id="start" class="blue">START</button>
+    </div>
+    <div id="div2">
+        <h2>Pattern Editor</h2>
+        <canvas id="canvas2" width="600" height="400"></canvas>
+        <p id="error"></p>
+        <textarea id="textarea" rows="10" cols="70"></textarea>
+        <div>
+            <button id="display" class="blue">DISPLAY AREA</button>
+            <label for="color">Segment-color : </label>
+            <select id="color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="gray">Gray</option>
+                <option value="black" selected>Black</option>
+            </select>
+        </div>
+        <div>
+            <button id="export">EXPORT</button>
+            <label for="pattern">Export : </label>
+            <select id="pattern">
+                <option value="None" selected>None</option>
+            </select>
+            <button id="import" class="blue">IMPORT</button>
+        </div>
+    </div>
+</body>
+
+</html>
